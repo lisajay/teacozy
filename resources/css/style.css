@@ -1,21 +1,88 @@
-html {
+/* universal styles */
+body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
 }
 
+a {
+  color: seashell;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/*header section styles */
 .header {
   display: flex;
   background-color: black;
   position: fixed;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 0px 20px;
+  height: 69px;
+  border-bottom: 1px solid white;
+  z-index: 20;
+  top: 0px;
   left: 0px;
-  right: 0px;
+}
+
+.header img {
+  height: 50px;
 }
 
 .logo {
   display: block;
+}
+
+.nav span {
+  padding: 20px 10px;
+}
+
+/* main section styles */
+
+.main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.mission {
+  background-image: url("../images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  margin-top: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-text {
+  width: 1200px;
+  z-index: 20;
+  background-color: black;
+  text-align: center;
+}
+
+.tea-month {
+  width: 1000px;
+}
+
+.tea-month-heading {
+  width: 1000px;
+  text-align: center;
+}
+
+.pod-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.pod img {
+  height: 200px;
+  width: 300px;
 }
